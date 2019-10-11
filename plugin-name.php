@@ -70,10 +70,20 @@ $plugin->views($plugin->config('plugin.views', []));
 | Plugin Service Providers
 |--------------------------------------------------------------------------
 |
-| Register the plugin "views" directory. You can configure the list of
-| view directories from the "config/prefix_plugin.php" configuration file.
+| Register Plugin service providers. You can manage the list of
+| services providers through the config/prefix_plugin.php configuration file.
 */
 $plugin->providers($plugin->config('plugin.providers', []));
+
+/*
+|--------------------------------------------------------------------------
+| Plugin Hooks
+|--------------------------------------------------------------------------
+|
+| Register theme Plugin. You can manage the list of hooks
+| through the config/prefix_plugin.php configuration file.
+*/
+$plugin->hooks($plugin->config('plugin.hooks', []));
 
 /*
 |--------------------------------------------------------------------------
